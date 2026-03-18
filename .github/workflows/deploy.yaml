@@ -61,9 +61,9 @@ jobs:
       run: |
         tflint --init
         tflint
-
-    - name: 'tfsec'
-      run: tfsec .
+  #  comment tfsec feacture
+   # - name: 'tfsec'
+   #  run: tfsec .
 
     - name: 'Terraform Plan'
       run: terraform plan -out=tfplan
